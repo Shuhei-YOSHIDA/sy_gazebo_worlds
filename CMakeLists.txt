@@ -8,7 +8,7 @@ project(sy_gazebo_worlds)
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
-  gazebo_def
+  gazebo_dev
   gazebo_msgs
   gazebo_ros
   gazebo_ros_control
