@@ -7,7 +7,13 @@ project(sy_gazebo_worlds)
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
-find_package(catkin REQUIRED)
+find_package(catkin REQUIRED COMPONENTS
+  gazebo_def
+  gazebo_msgs
+  gazebo_ros
+  gazebo_ros_control
+  gazebo_plugins
+)
 
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
