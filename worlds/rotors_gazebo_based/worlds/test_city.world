@@ -1,10 +1,10 @@
 <?xml version="1.0" ?>
 <sdf version='1.4'>
   <world name='default'>
-    <plugin name='gazebo_octomap' filename='librotors_gazebo_octomap_plugin.so'>
-      <octomapPubTopic>world/octomap</octomapPubTopic>
-      <octomapServiceName>world/get_octomap</octomapServiceName>
-    </plugin>
+    <!--<plugin name='gazebo_octomap' filename='librotors_gazebo_octomap_plugin.so'>-->
+      <!--<octomapPubTopic>world/octomap</octomapPubTopic>-->
+      <!--<octomapServiceName>world/get_octomap</octomapServiceName>-->
+    <!--</plugin>-->
     <light name='sun' type='directional'>
       <cast_shadows>1</cast_shadows>
       <pose>0 0 10 0 0 0</pose>
@@ -21,7 +21,7 @@
 
     <!-- Only one ROS interface plugin is required per world, as any other plugin can connect a Gazebo
          topic to a ROS topic (or vise versa). -->
-    <plugin name="ros_interface_plugin" filename="librotors_gazebo_ros_interface_plugin.so"/>
+    <!-- <plugin name="ros_interface_plugin" filename="librotors_gazebo_ros_interface_plugin.so"/> -->
 
     <physics type='ode'>
       <ode>
